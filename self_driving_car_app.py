@@ -10,21 +10,27 @@ from kivy.clock import Clock
 from kivy.uix.label import Label
 
 class Car(Widget):
-    pass
+    angle = NumericProperty(0)
 
 class Map(Widget):
+    pass
+
+class Ball(Widget):
+    pass
+
+class Form(Widget):
     pass
 #     car = ObjectProperty(None)
 #     print(car.center)
 
 
-class CarApp(App):
+class SelfDrivingCarApp(App):
 
     def build(self):
-        my_map = Map()
-        return my_map
+        my_form = Form()
+        return my_form
         # return Label(text='Hello world')
         # return Car()
 
 if __name__ == '__main__':
-    CarApp().run()
+    SelfDrivingCarApp().run()
